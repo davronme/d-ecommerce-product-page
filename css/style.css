@@ -1,7 +1,10 @@
 /* COSTOM PROPS */
 :root{
   --orange: #ff7e1b;
+  --accent-orange-hover: rgba(255, 126, 27, 0.8);
+  --accent-orange-active: rgba(255, 126, 27, 0.6);
   --grey: #69707d;
+  --accent-grey: #ffeee2;
   --black: #1d2026;
   --light-box-bgc: rgba(0, 0, 0, 0.75);
 }
