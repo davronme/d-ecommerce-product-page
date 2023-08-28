@@ -37,8 +37,6 @@ elsImgShowcaseThumbnailButton.forEach( function (elButton){
     // UPDATE ACTIVE IMG SRC ACCORDINGLY
     elImgShowcaseActiveImg.src = elButton.dataset.imgShowcaseBig
     elImgShowcaseActiveImg.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetena} 2x`;
-
-    console.log(elButton.dataset.imgShowcaseRetena);
   })
 });
 
@@ -64,3 +62,23 @@ if (elLightboxClose) {
     elLightbox.classList.remove(modifires.lightboxOpen);
   })
 }
+
+// LIGHTBOX SHOWCASE
+const elsImgLightboxThumbnailButton = document.querySelectorAll('.js-img-lightbox__thumbnail-button');
+const elImgLightboxShowcaseActiveImg = document.querySelector('.img-lightbox-showcase__active-img')
+
+elsImgLightboxThumbnailButton.forEach( function (elButton){
+  elButton.addEventListener('click', function(){
+
+    // REMOVE ACTIVE CLASS FROM ALL ELEMENTS
+    elsImgLightboxThumbnailButton.forEach( function (elButton){
+      elButton.classList.remove(modifires.imgSHowcaseActiveBotton);
+    });
+    // ADD ACTIVE CLASS FOR CLICKED ELEMENT
+    elButton.classList.add(modifires.imgSHowcaseActiveBotton);
+
+    // UPDATE ACTIVE IMG SRC ACCORDINGLY
+    elImgLightboxShowcaseActiveImg.src = elButton.dataset.imgShowcaseBig
+    elImgLightboxShowcaseActiveImg.srcset = `${elButton.dataset.imgShowcaseBig} 1x, ${elButton.dataset.imgShowcaseRetena} 2x`;
+  })
+});
