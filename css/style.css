@@ -511,6 +511,18 @@ select:-webkit-autofill:focus {
   overflow: hidden;
   cursor: pointer;
 }
+.img-showcase__active-thumbnail::after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--orange);
+  background-color: rgba(255, 255, 255, 0.75);
+  content: "";
+
+}
 .img-showcase__active-thumbnail-button::after {
   position: absolute;
   left: 0;
