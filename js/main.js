@@ -154,3 +154,25 @@ if (elImgShowcasePreviosImg) {
 
   })
 }
+
+// Prodact Info Card Actions
+const elQuantityButtonMinus = document.querySelector('.js-prodect-info__quantity-button-minus')
+const elQuantityButtonPlus = document.querySelector('.js-prodect-info__quantity-button-plus')
+const elQuantity = document.querySelector('.prodect-info__quantity')
+
+// Increment Quantity
+if (elQuantityButtonPlus) {
+  elQuantityButtonPlus.addEventListener('click', function () {
+    elQuantity.textContent = parseInt(elQuantity.textContent, 10) + 1;
+  });
+};
+
+// Increment Quantity
+if (elQuantityButtonMinus) {
+  elQuantityButtonMinus.addEventListener('click', function () {
+    if (parseInt(elQuantity.textContent, 10) > 0) {
+      elQuantity.textContent = parseInt(elQuantity.textContent, 10) - 1;
+
+    }
+  });
+};

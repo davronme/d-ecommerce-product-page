@@ -400,6 +400,10 @@ select:-webkit-autofill:focus {
   padding: 22px 22px 18px 22px;
 }
 
+.button__prepend {
+  margin-right: 16px;
+}
+
 
 /* MAIN CONTENT */
 .main-content{
@@ -420,10 +424,6 @@ select:-webkit-autofill:focus {
   width: 100%;
   max-width: 445px;
   margin-right: 48px;
-}
-.product-page__info {
-  width: 100%;
-  max-width: 445px;
 }
 
 /* IMG SHOWCASE */
@@ -552,6 +552,104 @@ select:-webkit-autofill:focus {
   height: 88px;
   object-fit: cover;
 }
+
+/* PRODUCT PAGE INFO */
+.product-page__info {
+  width: 100%;
+  max-width: 445px;
+  padding-top: 60px;
+}
+.prodact-info__company {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: var(--orange);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.prodact-info__heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 48px;
+  color: var(--black);
+}
+.prodact-info__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.prodact-info__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.prodact-info__price{
+  font-size: 28px;
+  line-height: normal;
+  color: var(--black);
+  font-weight: bold;
+  margin-right: 16px;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px 4px;
+  background-color: #ffeee2;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  line-height: normal;
+  margin-right: 16px;
+}
+.basic-price {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b6bcc8;
+}
+.prodact-info__card-actions {
+  display: flex;
+}
+.prodect-info__quantity-wrapper {
+  display: flex;
+  width: 156px;
+  background-color: #f6f8fd;
+  border-radius: 10px;
+  margin-right: 16px;
+}
+.prodect-info__quantity-button {
+  width: 52px;
+  border: 0;
+  border-radius: 10px;
+  padding: 0;
+  background-color: transparent;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--orange);
+  line-height: normal;
+  cursor: pointer;
+}
+.prodect-info__quantity-button:hover {
+  opacity: 0.8;
+}
+.prodect-info__quantity-button:active {
+  background-color: var(--orange);
+  color: #fff;
+}
+.prodect-info__quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+}
+
 
 /* LIGHTBOX */
 .lightbox {
